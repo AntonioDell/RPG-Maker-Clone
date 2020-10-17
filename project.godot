@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Object",
+"class": "Branch",
+"language": "GDScript",
+"path": "res://script/Branch.gd"
+}, {
+"base": "Resource",
+"class": "Conversation",
+"language": "GDScript",
+"path": "res://script/ConversationResource.gd"
+}, {
+"base": "RichTextEffect",
+"class": "TypewriterEffect",
+"language": "GDScript",
+"path": "res://script/Typewriter_Effect.gd"
+} ]
+_global_script_class_icons={
+"Branch": "",
+"Conversation": "res://icon.png",
+"TypewriterEffect": ""
+}
+
+[application]
+
+config/name="Plattformer Template"
+run/main_scene="res://scene/Main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+BbcodeGlobal="*res://script/BBCodeGlobal.gd"
+
+[memory]
+
+limits/message_queue/max_size_kb=2048
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://script/ConversationResource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+branches = [ {
+"text": "[typewriter speed=0.2]Hello, it is me!"
+}, {
+"text": "[typewriter speed=0]UNCLE BOB"
+}, {
+"choices": [ "You know it!", "No way" ],
+"text": "[typewriter speed=0.2]You have been naughty, haven't you?"
+}, {
+"text": "[typewriter speed=1]Well"
+}, {
+"text": "[typewriter speed=.2]Sadly... you will[/typewriter][typewriter speed=1] [color=red]DIE"
+} ]
