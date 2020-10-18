@@ -5,14 +5,26 @@
 [resource]
 script = ExtResource( 1 )
 branches = [ {
+"id": "1",
 "text": "[typewriter speed=0.2]Hello, it is me!"
 }, {
+"id": "2",
 "text": "[typewriter speed=0]UNCLE BOB"
 }, {
-"choices": [ "You know it!", "No way" ],
+"choices": [ {
+"id": "c1_1",
+"text": "You know it!"
+}, {
+"id": "c1_2",
+"text": "No way"
+} ],
+"id": "3",
 "text": "[typewriter speed=0.2]You have been naughty, haven't you?"
 }, {
-"text": "[typewriter speed=1]Well"
+"conditions": [ "c1_1" ],
+"id": "4",
+"text": "[typewriter speed=.2]Yes I did..."
 }, {
-"text": "[typewriter speed=.2]Sadly... you will[/typewriter][typewriter speed=1] [color=red]DIE"
+"id": "5",
+"text": "[typewriter speed=.2]Sadly... you will[/typewriter][typewriter speed=1][color=red] DIE"
 } ]

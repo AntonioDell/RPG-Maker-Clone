@@ -9,10 +9,15 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Object",
+"base": "Reference",
 "class": "Branch",
 "language": "GDScript",
 "path": "res://script/Branch.gd"
+}, {
+"base": "Reference",
+"class": "Choice",
+"language": "GDScript",
+"path": "res://script/Choice.gd"
 }, {
 "base": "Resource",
 "class": "Conversation",
@@ -22,10 +27,11 @@ _global_script_classes=[ {
 "base": "RichTextEffect",
 "class": "TypewriterEffect",
 "language": "GDScript",
-"path": "res://script/Typewriter_Effect.gd"
+"path": "res://script/TypewriterEffect.gd"
 } ]
 _global_script_class_icons={
 "Branch": "",
+"Choice": "",
 "Conversation": "res://icon.png",
 "TypewriterEffect": ""
 }
