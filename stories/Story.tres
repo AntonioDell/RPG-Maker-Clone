@@ -1,0 +1,110 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"OldGuy/RantAboutSon": 1,
+"TextureLibrary": 2
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "OldGuy/RantAboutSon",
+"nodes": {
+1: {
+"graph_offset": Vector2( -600, -760 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -600, -580 ),
+"links": {
+0: 3,
+1: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 2,
+"text": "<speaker>Man about to die</speaker>
+<dialog>[typewriter speed=.1]I didn't expect visitors at this late hour. You... are you, who I think you are?</dialog>
+<choiceJSON>{\"Yes\" : 0, \"I don't know\" : 1}</choiceJSON>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -80, -740 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Me</speaker>
+<dialog>[typewriter speed=0.2]Yes.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -80, -460 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Me</speaker>
+<dialog>...</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 400, -580 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Man about to die</speaker>
+<dialog>I see. Well, I don't mind. You gave me more than enough time. Thank you for that. I think... I think I'm ready. It's late, and I'm a tired old man. Let's get it over with, shall we?</dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 880, -580 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Me</speaker>
+<dialog>It is already done. (Play lighting and lighten up body of old man, lying in his bed)</dialog>",
+"type": "line"
+}
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "New Dialog - Enter Human Readable Description.",
+"name": "TextureLibrary",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "{
+\"1\" : \"res://KillTheOldDude/Assets/1.png\"
+}",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [  ]

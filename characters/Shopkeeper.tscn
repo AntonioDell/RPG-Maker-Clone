@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://characters/Shopkeeper_Anim.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://characters/Shopkeeper.gd" type="Script" id=2]
+[ext_resource path="res://conversation/OpenShop.tres" type="TextFile" id=3]
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 8, 8 )
+
+[node name="Shopkeeper" type="KinematicBody2D"]
+script = ExtResource( 2 )
+open_shop_conversation = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+one_way_collision_margin = 1.1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+pause_mode = 2
+frames = ExtResource( 1 )
+animation = "idle"
+playing = true
+centered = false

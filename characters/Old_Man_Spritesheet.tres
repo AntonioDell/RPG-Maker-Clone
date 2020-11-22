@@ -1,0 +1,56 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=2]
+
+[ext_resource path="res://characters/SpriteSheet.gd" type="Script" id=1]
+[ext_resource path="res://assets/Old_Man_Sheet.png" type="Texture" id=2]
+
+
+
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 32, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 48, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 16, 16, 16 )
+
+[resource]
+animations = [ {
+"frames": [ SubResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 2 ) ],
+"loop": true,
+"name": "walk_down",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "walk_right",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "walk_left",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 5 ) ],
+"loop": true,
+"name": "walk_up",
+"speed": 3.0
+} ]
+script = ExtResource( 1 )

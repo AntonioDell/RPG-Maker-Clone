@@ -1,0 +1,72 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_BakedStory/EXP_BakedStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Baked_Story"
+story = {
+1: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3,
+1: 4
+},
+"text": "<speaker>Man about to die</speaker>
+<dialog>[typewriter speed=.1]I didn't expect visitors at this late hour. You... are you, who I think you are?</dialog>
+<choiceJSON>{\"Yes\" : 0, \"I don't know\" : 1}</choiceJSON>"
+},
+3: {
+"links": {
+0: 5
+},
+"text": "<speaker>Me</speaker>
+<dialog>[typewriter speed=0.2]Yes.</dialog>"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Me</speaker>
+<dialog>...</dialog>"
+},
+5: {
+"links": {
+0: 6
+},
+"text": "<speaker>Man about to die</speaker>
+<dialog>I see. Well, I don't mind. You gave me more than enough time. Thank you for that. I think... I think I'm ready. It's late, and I'm a tired old man. Let's get it over with, shall we?</dialog>"
+},
+6: {
+"links": {
+
+},
+"text": "<speaker>Me</speaker>
+<dialog>It is already done. (Play lighting and lighten up body of old man, lying in his bed)</dialog>"
+}
+}
+},
+2: {
+"nodes": {
+1: {
+"links": {
+
+},
+"text": "{
+\"1\" : \"res://KillTheOldDude/Assets/1.png\"
+}"
+}
+}
+}
+}
+names = {
+"OldGuy/RantAboutSon": 1,
+"TextureLibrary": 2
+}

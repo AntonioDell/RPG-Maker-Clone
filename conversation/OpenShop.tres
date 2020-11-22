@@ -1,0 +1,32 @@
+[gd_resource type="TextFile" load_steps=2 format=2]
+
+[ext_resource path="res://conversation/ConversationResource.gd" type="Script" id=1]
+
+
+
+[resource]
+script = ExtResource( 1 )
+branches = [ {
+"id": "1",
+"text": "[typewriter speed=0.1]Why, my, hello there!"
+}, {
+"id": "2",
+"text": "[typewriter speed=0.1]Welcome to this my humble, run-down, dump of a shop."
+}, {
+"choices": [ {
+"id": "c1_1",
+"text": "Sure"
+}, {
+"id": "c1_2",
+"text": "Go to hell, demon!"
+} ],
+"id": "3",
+"text": "[typewriter speed=0.1]Wanna buy something?"
+}, {
+"conditions": [ "c1_2" ],
+"id": "4",
+"text": "[typewriter speed=.5]You got me..."
+}, {
+"id": "5",
+"text": "[typewriter speed=.1]Bye now!"
+} ]
