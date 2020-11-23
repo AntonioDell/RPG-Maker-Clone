@@ -1,21 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://characters/Death_Sheet.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://characters/Player.gd" type="Script" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
-
-[sub_resource type="Shader" id=2]
-code = "shader_type canvas_item;
-
-void fragment() {
-	COLOR.rgb = vec3(1.0, 1.0, 1.0);
-}"
-
-[sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 2 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -25,7 +14,9 @@ position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-material = SubResource( 3 )
 frames = ExtResource( 1 )
 animation = "idle"
 centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true

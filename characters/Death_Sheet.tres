@@ -1,11 +1,19 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=2]
+[gd_resource type="SpriteFrames" load_steps=9 format=2]
 
 [ext_resource path="res://characters/SpriteSheet.gd" type="Script" id=1]
 [ext_resource path="res://characters/Death.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=1]
+[sub_resource type="AtlasTexture" id=5]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 16, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 32, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
@@ -21,7 +29,7 @@ region = Rect2( 0, 32, 16, 16 )
 
 [resource]
 animations = [ {
-"frames": [ SubResource( 1 ) ],
+"frames": [ SubResource( 5 ), SubResource( 6 ), SubResource( 7 ) ],
 "loop": true,
 "name": "idle",
 "speed": 3.0
@@ -33,12 +41,12 @@ animations = [ {
 }, {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
-"name": "walk_right",
+"name": "walk_up",
 "speed": 3.0
 }, {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
-"name": "walk_up",
+"name": "walk_right",
 "speed": 3.0
 }, {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
